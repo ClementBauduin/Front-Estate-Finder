@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .ErrorWrapper {
+    margin-top: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ErrorWrapper h2 {
+    font-size: 1.3rem;
+  }
+}/*# sourceMappingURL=ErrorPage.module.css.map */

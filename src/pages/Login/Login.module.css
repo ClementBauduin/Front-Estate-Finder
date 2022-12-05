@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+  main h1 {
+    text-align: center;
+    margin-top: 5vmin;
+  }
+  main form.LoginForm {
+    width: 90%;
+    line-height: 2;
+    text-align: left;
+    box-shadow: 0px 1px 6px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 5vmin;
+    margin: 5vmin auto;
+  }
+  main form.LoginForm label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: block;
+  }
+  main form.LoginForm input {
+    padding: 2px;
+    font-size: 21px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+    display: block;
+    width: 100%;
+  }
+  main form.LoginForm .message {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  main h1 {
+    text-align: center;
+    margin-top: 5vmin;
+  }
+  main form.LoginForm {
+    width: 60%;
+    line-height: 2;
+    text-align: left;
+    box-shadow: 0px 1px 6px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 5vmin;
+    margin: 5vmin auto;
+  }
+  main form.LoginForm label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: block;
+  }
+  main form.LoginForm input {
+    padding: 2px;
+    font-size: 21px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+    display: block;
+    width: 100%;
+  }
+  main form.LoginForm .message {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+}/*# sourceMappingURL=Login.module.css.map */
