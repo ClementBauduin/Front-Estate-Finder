@@ -35,7 +35,7 @@ export default function Login(props) {
     <>
       <Header/>
       <main>
-        <h1>Login</h1>
+        <h1 className={Style.title}>Login</h1>
         <form onSubmit={handleSubmit(onSubmit)} className={Style.LoginForm}>
 
           <label htmlFor="usernameMail">Username or Email</label>

@@ -6,6 +6,7 @@ import Profile from './pages/Profile/Profile';
 import Register from "./pages/Register/Register"
 import Estate from './pages/EstateDetail/EstateDetail';
 import ConfirmSignUp from './pages/ConfirmSignUp/message';
+import EditEstate from './pages/EditEstate/EditEstate';
 import { useQuery } from '@tanstack/react-query';
 import getUser from './api/getUser';
 import { createContext } from 'react';
@@ -28,6 +29,7 @@ function App() {
             <Route path='/' element={<Home />}/>
             <Route path='/profile/:id' element={<Profile/>}/>
             <Route path='/estate/:id' element={<Estate />}/>
+            <Route path='/editEstate/:id' element={<EditEstate />} />
             <Route path='/register' element={<Register />}/>
             <Route path='/login' element={<Login />}/>
             <Route path='/confirm/:codeConfirmation' element={<ConfirmSignUp />}/>

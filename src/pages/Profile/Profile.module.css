@@ -1,0 +1,128 @@
+@media (max-width: 768px) {
+  .buttonContainer {
+    padding: 2vmin 0 2vmin 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.25);
+  }
+  .buttonContainer .buttonEstates {
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    border: 2px solid var(--violet);
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .buttonContainer .buttonEstates:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    background: url("../../assets/villa.png") no-repeat;
+    background-size: cover;
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    margin-right: 0.5rem;
+  }
+  .buttonContainer .buttonEstates:hover {
+    color: var(--pink);
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in;
+    text-shadow: 4px 4px 10px var(--pink);
+  }
+  .buttonContainer .buttonAdd {
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    border: 2px solid var(--violet);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .buttonContainer .buttonAdd:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 5px;
+    background: url("../../assets/add.png") no-repeat;
+    background-size: cover;
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    margin-right: 0.5rem;
+  }
+  .buttonContainer .buttonAdd:hover {
+    color: var(--pink);
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in;
+    text-shadow: 4px 4px 10px var(--pink);
+  }
+  .appContainer {
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .buttonContainer {
+    padding: 2vmin 0 2vmin 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.25);
+  }
+  .buttonContainer .buttonEstates {
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+  }
+  .buttonContainer .buttonEstates:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    background: url("../../assets/villa.png") no-repeat;
+    background-size: cover;
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    margin-right: 0.5rem;
+  }
+  .buttonContainer .buttonEstates:hover {
+    color: var(--pink);
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in;
+    text-shadow: 4px 4px 10px var(--pink);
+  }
+  .buttonContainer .buttonAdd {
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+  }
+  .buttonContainer .buttonAdd:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 5px;
+    background: url("../../assets/add.png") no-repeat;
+    background-size: cover;
+    width: 1.4rem;
+    height: 1.4rem;
+    float: left;
+    margin-right: 0.5rem;
+  }
+  .buttonContainer .buttonAdd:hover {
+    color: var(--pink);
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in;
+    text-shadow: 4px 4px 10px var(--pink);
+  }
+  .appContainer {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=Profile.module.css.map */

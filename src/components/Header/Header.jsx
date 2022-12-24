@@ -14,7 +14,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const {userData,refetch} = useContext(UserContext)
   const toggle = () => setIsOpen(!isOpen)
-
+  
   const onLogout = () => {
     logout()
       .then(res=>{
@@ -31,7 +31,7 @@ export default function Header() {
             <MobileMenuButton toggle={toggle}/>
             <nav className={Style.navbarMenu}>
               <Link to={'/'}>Home</Link>
-              {userData && <Link to={`/profile/${userData.id}`}>Profile</Link>}
+              {userData && <Link to={`/profile/${userData.username}`}>Profile</Link>}
               <Link to={'/login'}>Login</Link>
               <Link to={'/register'}>Register</Link>
               {userData && <Link onClick={()=>onLogout()} to={'/login'}>Logout</Link>}

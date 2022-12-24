@@ -31,7 +31,7 @@ export default function Register() {
     <>
       <Header />
       <main>
-        <h1>Register</h1>
+        <h1 className={Style.title}>Register</h1>
         <form onSubmit={handleSubmit(onSubmit)} className={Style.RegisterForm}>
           <label htmlFor="username">Username</label>
           <input id="username"type="text" {...register("username",{required:true,pattern: /^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/})}></input>

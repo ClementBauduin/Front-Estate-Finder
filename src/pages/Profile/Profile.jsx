@@ -1,17 +1,31 @@
 import Header from "../../components/Header/Header"
-import { UserContext } from "../../App"
-import { useContext } from "react"
+import Style from "./Profile.module.css"
+import { useState } from "react"
+import NewEstate from "../../components/NewEstate/NewEstate"
+import UserEstates from "../../components/UserEstates/UserEstates"
 
 export default function Profile() {
 
-  const {userData} = useContext(UserContext)
+  const [app,setApp] = useState("yourEstates")
+
 
   return (
     <>
       <Header />
-       {userData ?  
-       (<div>You are connected as user : {userData.username} </div>) :
-        (<div>You are not connected</div>)}
+      <div className={Style.buttonContainer}>
+          <div className={Style.buttonEstates} onClick={() => setApp("yourEstates")}>MY ESTATES</div>
+          <div className={Style.buttonAdd} onClick={() => setApp("newEstate")}>ADD AN ESTATE</div>
+      </div>
+       <main className={Style.appContainer}>
+
+          {app === "yourEstates" && 
+            <UserEstates/> }
+          
+
+          {app === "newEstate" && 
+            <NewEstate/> }
+          
+       </main>
     </>
   )
 }

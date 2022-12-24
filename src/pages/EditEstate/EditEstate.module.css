@@ -1,23 +1,19 @@
 @media (max-width: 768px) {
-  main h1.title {
-    text-align: center;
-    margin-top: 5vmin;
-  }
-  main form.LoginForm {
+  .editEstateForm {
     width: 90%;
     line-height: 2;
     text-align: left;
     box-shadow: 0px 1px 6px 6px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-    padding: 5vmin;
+    padding: calc(5vmin - 8px) 5vmin 5vmin 5vmin;
     margin: 5vmin auto;
   }
-  main form.LoginForm label {
+  .editEstateForm label {
     font-size: 1.2rem;
     font-weight: 400;
     display: block;
   }
-  main form.LoginForm input {
+  .editEstateForm input {
     padding: 2px;
     font-size: 21px;
     border-width: 1px;
@@ -30,7 +26,20 @@
     display: block;
     width: 100%;
   }
-  main form.LoginForm .message {
+  .editEstateForm select {
+    padding: 2px;
+    font-size: 21px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+    display: block;
+    width: 100%;
+  }
+  .editEstateForm .message {
     color: red;
     font-size: 1.2rem;
     font-weight: 400;
@@ -38,25 +47,21 @@
   }
 }
 @media (min-width: 768px) {
-  main h1.title {
-    text-align: center;
-    margin-top: 5vmin;
-  }
-  main form.LoginForm {
+  .editEstateForm {
     width: 100vmin;
     line-height: 2;
     text-align: left;
     box-shadow: 0px 1px 6px 6px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-    padding: 5vmin;
+    padding: calc(5vmin - 8px) 5vmin 5vmin 5vmin;
     margin: 5vmin auto;
   }
-  main form.LoginForm label {
+  .editEstateForm label {
     font-size: 1.2rem;
     font-weight: 400;
     display: block;
   }
-  main form.LoginForm input {
+  .editEstateForm input {
     padding: 2px;
     font-size: 21px;
     border-width: 1px;
@@ -69,10 +74,23 @@
     display: block;
     width: 100%;
   }
-  main form.LoginForm .message {
+  .editEstateForm select {
+    padding: 2px;
+    font-size: 21px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+    display: block;
+    width: 100%;
+  }
+  .editEstateForm .message {
     color: red;
     font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
   }
-}/*# sourceMappingURL=Login.module.css.map */
+}/*# sourceMappingURL=EditEstate.module.css.map */

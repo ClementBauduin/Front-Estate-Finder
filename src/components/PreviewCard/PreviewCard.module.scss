@@ -1,0 +1,68 @@
+@media (min-width:768px) and (max-width:1024px) {
+
+    .previewCard {
+        width: 48%;
+        margin: 1%;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        line-height: 1rem;
+
+        img {
+            border-radius: 1rem;
+        }
+
+        &:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+@media (min-width:1024px) {
+
+    .previewCard {
+        width: 31%;
+        margin: 1%;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        line-height: 1rem;
+
+        img {
+            border-radius: 1rem;
+        }
+
+        &:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .previewCard {
+
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        line-height: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+
+        img {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .infoWrapper {
+            padding: 10px;
+        }
+
+    }
+}

@@ -1,0 +1,154 @@
+@media (max-width:768px) {
+    .buttonContainer {
+
+        padding: 2vmin 0 2vmin 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.25);
+
+
+        .buttonEstates {
+
+            font-size: 1.4rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.5s ease-out;
+            border: 2px solid var(--violet);
+            border-radius: 15px;
+            padding: 5px;
+
+            &:before {
+                content: "";
+                display: block;
+                position: relative;
+                top: +4px;
+                background: url("../../assets/villa.png") no-repeat;
+                background-size: cover;
+                width: 1.4rem;
+                height: 1.4rem;
+                float: left;
+                margin-right: 0.5rem;
+            }
+
+            &:hover {
+                color: var(--pink);
+                transform: scale(1.1);
+                transition: transform 0.1s ease-in;
+                text-shadow: 4px 4px 10px var(--pink);
+
+            }
+        }
+
+        .buttonAdd {
+
+            font-size: 1.4rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.5s ease-out;
+            border: 2px solid var(--violet);
+            border-radius: 15px;
+            padding: 5px;
+            margin-top: 10px;
+
+            &:before {
+                content: "";
+                display: block;
+                position: relative;
+                top: +5px;
+                background: url("../../assets/add.png") no-repeat;
+                background-size: cover;
+                width: 1.4rem;
+                height: 1.4rem;
+                float: left;
+                margin-right: 0.5rem;
+            }
+
+            &:hover {
+                color: var(--pink);
+                transform: scale(1.1);
+                transition: transform 0.1s ease-in;
+                text-shadow: 4px 4px 10px var(--pink);
+
+            }
+        }
+    }
+
+    .appContainer {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .buttonContainer {
+
+        padding: 2vmin 0 2vmin 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.25);
+
+        .buttonEstates {
+            font-size: 1.4rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.5s ease-out;
+
+            &:before {
+                content: "";
+                display: block;
+                position: relative;
+                top: +4px;
+                background: url("../../assets/villa.png") no-repeat;
+                background-size: cover;
+                width: 1.4rem;
+                height: 1.4rem;
+                float: left;
+                margin-right: 0.5rem;
+            }
+
+            &:hover {
+                color: var(--pink);
+                transform: scale(1.1);
+                transition: transform 0.1s ease-in;
+                text-shadow: 4px 4px 10px var(--pink);
+
+            }
+        }
+
+        .buttonAdd {
+            font-size: 1.4rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.5s ease-out;
+
+            &:before {
+                content: "";
+                display: block;
+                position: relative;
+                top: +5px;
+                background: url("../../assets/add.png") no-repeat;
+                background-size: cover;
+                width: 1.4rem;
+                height: 1.4rem;
+                float: left;
+                margin-right: 0.5rem;
+            }
+
+            &:hover {
+                color: var(--pink);
+                transform: scale(1.1);
+                transition: transform 0.1s ease-in;
+                text-shadow: 4px 4px 10px var(--pink);
+
+            }
+        }
+    }
+
+    .appContainer {
+        padding: 10px;
+    }
+
+}
