@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import deleteEstate from '../../api/deleteEstate'
 
 export default function PreviewCard({estate,user,refetch}) {
-
+    const url = process.env.REACT_APP_API_URL;
     const handleDelete = async (id) => {
         await deleteEstate(id)
         refetch()
@@ -14,7 +14,7 @@ export default function PreviewCard({estate,user,refetch}) {
                 <div style={{display:"flex",flexDirection:"column",justifyContent:"space-between",height:"100%"}}>
                     <Link to={`/estate/${estate._id}`} style={{textDecoration:"none",color:"black"}}>
                         <div>
-                            <img style={{minHeight:"43vh",width:"100%"}} src={`http://localhost:5000/${estate.images[0].img1}`} alt="preview of the first estate img"></img>
+                            <img style={{minHeight:"43vh",width:"100%"}} src={`${url}/${estate.images[0].img1}`} alt="preview of the first estate img"></img>
                             <p style={{display:"inline-block",padding:"0 0.8rem 0 0.8rem",color:"white",borderRadius:"1.2rem",backgroundColor:"rgba(0, 0, 0, 0.5)",position: "relative",bottom:"2rem",left:"0.5rem"}}>{estate.images.length}</p>
                         </div>
                     </Link>
