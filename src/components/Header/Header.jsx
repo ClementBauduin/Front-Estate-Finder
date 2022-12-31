@@ -34,7 +34,7 @@ export default function Header() {
               {userData && <Link to={`/profile/${userData.username}`}>Profile</Link>}
               <Link to={'/login'}>Login</Link>
               <Link to={'/register'}>Register</Link>
-              {userData && <Link onClick={()=>onLogout()} to={'/login'}>Logout</Link>}
+              {userData && <Link onClick={()=>onLogout()} to={'/'}>Logout</Link>}
             </nav>
         </header>
 
