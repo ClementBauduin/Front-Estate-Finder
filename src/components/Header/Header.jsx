@@ -15,8 +15,8 @@ export default function Header() {
   const {userData,refetch} = useContext(UserContext)
   const toggle = () => setIsOpen(!isOpen)
   
-  const onLogout = () => {
-    logout();
+  const onLogout = async () => {
+    await logout();
     refetch();
   }
   return (
