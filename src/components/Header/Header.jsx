@@ -16,13 +16,8 @@ export default function Header() {
   const toggle = () => setIsOpen(!isOpen)
   
   const onLogout = () => {
-    logout()
-      .then(res=>{
-        refetch();
-      })
-      .catch(err=>{
-        console.log(err)
-      })
+    logout();
+    refetch();
   }
   return (
     <>
