@@ -66,6 +66,7 @@
   header .navbarMenu p {
     transition: transform 0.5s ease-out;
     cursor:pointer;
+    font-weight: 500;
   }
   header .navbarMenu p:hover {
     color: var(--pink);
