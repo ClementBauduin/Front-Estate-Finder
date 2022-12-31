@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MobileMenuButton from '../MobileMenuButton/MobileMenuButton'
 import {Link} from 'react-router-dom' 
-import {logout} from '../../api/logout'
+import logout from '../../api/logout'
 import logo from '../../assets/EstateFinder.png'
 import './Header.module.css'
 import Style from './Header.module.css'
