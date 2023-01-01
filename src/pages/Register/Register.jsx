@@ -41,11 +41,11 @@ export default function Register() {
           <input id="email" type="mail" {...register("email",{required:true,pattern: /[a-z0-9!#$%&'*+=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/})}></input>
           {errors.email && <p className={Style.message}>Email is required</p>}
           <label htmlFor="password">Password</label>
-          <input id="password" type="password" {...register("password",{required:true,pattern:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/})}></input>
-          {errors.password && <p className={Style.message}>Password is required, must contain 8 characters one capital letter A-Z and at least one number 0-9.</p>}
+          <input id="password" type="password" {...register("password",{required:true,pattern:/^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/})}></input>
+          {errors.password && <p className={Style.message}>Password is required, must contain eight characters and at least one letter and one number .</p>}
 
           <label htmlFor="passwordCheck">Confirm Password</label>
-          <input id="passwordCheck" type="password" {...register("confirmPassword",{required:true,pattern:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/})}></input>
+          <input id="passwordCheck" type="password" {...register("confirmPassword",{required:true,pattern:/^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/})}></input>
           {PasswordError && <p>{PasswordError}</p>}
           {formError && <p className={Style.message}>{formError}</p>}
           <button type="submit">Register</button>
