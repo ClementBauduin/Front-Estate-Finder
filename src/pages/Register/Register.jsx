@@ -12,9 +12,10 @@ export default function Register() {
   const [formError, setFormError] = useState(null);
 
   const onSubmit = (data) => {
+    let url = process.env.REACT_APP_API_URL;
     if (data.password === data.confirmPassword) {
       let {username,email,password} = data;
-      axios.post(process.env.REACT_APP_API_URL, {username:username,email:email,password:password})
+      axios.post(`${url}/api/register`, {username:username,email:email,password:password})
       .then((response) => {
         setFormError(response.data.message)
       })
