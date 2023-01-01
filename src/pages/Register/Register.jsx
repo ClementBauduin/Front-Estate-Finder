@@ -14,7 +14,7 @@ export default function Register() {
   const onSubmit = (data) => {
     if (data.password === data.confirmPassword) {
       let {username,email,password} = data;
-      axios.post("http://localhost:3000/api/register", {username:username,email:email,password:password})
+      axios.post(process.env.REACT_APP_API_URL, {username:username,email:email,password:password})
       .then((response) => {
         setFormError(response.data.message)
       })
@@ -42,7 +42,7 @@ export default function Register() {
           {errors.email && <p className={Style.message}>Email is required</p>}
           <label htmlFor="password">Password</label>
           <input id="password" type="password" {...register("password",{required:true,pattern:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/})}></input>
-          {errors.password && <p className={Style.message}>Password is required</p>}
+          {errors.password && <p className={Style.message}>Password is required, must contain 8 characters one capital letter A-Z and at least one number 0-9.</p>}
 
           <label htmlFor="passwordCheck">Confirm Password</label>
           <input id="passwordCheck" type="password" {...register("confirmPassword",{required:true,pattern:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/})}></input>
