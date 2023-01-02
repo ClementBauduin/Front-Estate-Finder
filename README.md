@@ -1,6 +1,6 @@
 # Estate Finder
 
-App is accessible here : https://estate-finder-clement-bauduin.netlify.app/
+App is accessible here : https://www.estate-finder.clementbauduin.com/
 
 ## Info
 
